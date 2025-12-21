@@ -1,3 +1,4 @@
+use crate::error::InvalidIdentifier;
 use derive_more::AsRef;
 use derive_more::with_trait::Display;
 use regex::Regex;
@@ -19,12 +20,12 @@ impl Identifier {
 }
 
 impl FromStr for Identifier {
-    type Err = ();
+    type Err = InvalidIdentifier;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         Identifier::regex()
             .is_match(s)
             .then(|| Self(s.to_string()))
-            .ok_or(())
+            .ok_or_else(|| InvalidIdentifier(s.to_string()))
     }
 }
