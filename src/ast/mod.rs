@@ -1,4 +1,5 @@
 mod basic_literal;
+mod call_expression;
 mod effects_clause;
 mod expression_list;
 mod field;
@@ -13,6 +14,7 @@ mod string_fragment;
 mod string_literal;
 
 pub use basic_literal::BasicLiteral;
+pub use call_expression::CallExpression;
 pub use effects_clause::EffectsClause;
 pub use expression_list::ExpressionList;
 pub use field::Field;
