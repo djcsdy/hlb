@@ -14,6 +14,7 @@ mod modifier;
 mod raw_string_literal;
 mod string_fragment;
 mod string_literal;
+mod with_clause;
 
 pub use basic_literal::BasicLiteral;
 pub use call_expression::CallExpression;
@@ -31,3 +32,4 @@ pub use modifier::Modifier;
 pub use raw_string_literal::RawStringLiteral;
 pub use string_fragment::StringFragment;
 pub use string_literal::StringLiteral;
+pub use with_clause::WithClause;
