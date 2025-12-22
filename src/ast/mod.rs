@@ -1,5 +1,6 @@
 mod basic_literal;
 mod bind;
+mod bind_clause;
 mod bind_list;
 mod call_expression;
 mod effects_clause;
@@ -20,6 +21,7 @@ mod with_clause;
 
 pub use basic_literal::BasicLiteral;
 pub use bind::Bind;
+pub use bind_clause::BindClause;
 pub use bind_list::BindList;
 pub use call_expression::CallExpression;
 pub use effects_clause::EffectsClause;
