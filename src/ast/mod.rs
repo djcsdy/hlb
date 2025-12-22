@@ -26,6 +26,8 @@ mod raw_string_literal;
 mod statement;
 mod string_fragment;
 mod string_literal;
+#[cfg(test)]
+mod test;
 mod with_clause;
 
 pub use basic_literal::BasicLiteral;
