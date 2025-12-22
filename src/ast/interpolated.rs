@@ -1,12 +1,12 @@
+use crate::ast::Expression;
 use derive_more::{Display, From};
 
 #[derive(Eq, PartialEq, Ord, PartialOrd, Clone, Hash, Debug, Display, From)]
-#[display("${{{}}}", "")] // TODO _0
-pub struct Interpolated(pub ()); // TODO Expression
+#[display("${{{}}}", _0)]
+pub struct Interpolated(pub Expression);
 
 impl Interpolated {
-    pub fn expression(&self) -> &() {
-        // TODO Expression
+    pub fn expression(&self) -> &Expression {
         &self.0
     }
 }
