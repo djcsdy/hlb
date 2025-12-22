@@ -1,3 +1,4 @@
+mod basic_literal;
 mod effects_clause;
 mod field;
 mod field_list;
@@ -10,6 +11,7 @@ mod raw_string_literal;
 mod string_fragment;
 mod string_literal;
 
+pub use basic_literal::BasicLiteral;
 pub use effects_clause::EffectsClause;
 pub use field::Field;
 pub use field_list::FieldList;
