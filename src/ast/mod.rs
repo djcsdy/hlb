@@ -5,6 +5,7 @@ mod function_signature;
 mod identifier;
 mod kind;
 mod modifier;
+mod raw_string_literal;
 
 pub use effects_clause::EffectsClause;
 pub use field::Field;
@@ -13,3 +14,4 @@ pub use function_signature::FunctionSignature;
 pub use identifier::Identifier;
 pub use kind::Kind;
 pub use modifier::Modifier;
+pub use raw_string_literal::RawStringLiteral;
