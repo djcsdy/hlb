@@ -1,3 +1,4 @@
+use crate::error::InvalidRawStringLiteral;
 use derive_more::{AsRef, Display};
 use std::str::FromStr;
 
@@ -12,11 +13,11 @@ impl RawStringLiteral {
 }
 
 impl FromStr for RawStringLiteral {
-    type Err = ();
+    type Err = InvalidRawStringLiteral;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         if s.contains("`") {
-            Err(())
+            Err(InvalidRawStringLiteral(s.to_string()))
         } else {
             Ok(Self(s.to_string()))
         }
