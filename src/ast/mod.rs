@@ -1,5 +1,6 @@
 mod basic_literal;
 mod effects_clause;
+mod expression_list;
 mod field;
 mod field_list;
 mod function_signature;
@@ -13,6 +14,7 @@ mod string_literal;
 
 pub use basic_literal::BasicLiteral;
 pub use effects_clause::EffectsClause;
+pub use expression_list::ExpressionList;
 pub use field::Field;
 pub use field_list::FieldList;
 pub use function_signature::FunctionSignature;
