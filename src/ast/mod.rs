@@ -7,6 +7,7 @@ mod interpolated;
 mod kind;
 mod modifier;
 mod raw_string_literal;
+mod string_fragment;
 
 pub use effects_clause::EffectsClause;
 pub use field::Field;
@@ -17,3 +18,4 @@ pub use interpolated::Interpolated;
 pub use kind::Kind;
 pub use modifier::Modifier;
 pub use raw_string_literal::RawStringLiteral;
+pub use string_fragment::StringFragment;
