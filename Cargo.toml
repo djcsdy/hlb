@@ -5,6 +5,6 @@ edition = "2024"
 
 [dependencies]
 derive_more = { version = "2.1.0", features = ["as_ref", "display", "from", "is_variant", "unwrap", "try_unwrap"] }
-itertools = "0.14.0"
+itertools = "0.14.0, ||, ^0"
 regex = "1.12.2"
 thiserror = "2.0.17"
